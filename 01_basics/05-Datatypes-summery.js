@@ -13,7 +13,7 @@ let Username;
 const id = Symbol('123')
 const atotherId = Symbol('123')
 
-console.log(id === atotherId);
+//console.log(id === atotherId);
 
 const bigNumber = 1365463265498n
 
@@ -37,7 +37,36 @@ const MyFunctions=function(){
     console.log("Hello World")};
     
 
-console.log(typeof id);
+//console.log(typeof id);
+
+
+
+// Memory ***************************************************
+
+// Stack (Primitive) , Heap ( Non-Primitive)
+
+let MyYoutubename = "hiteshchowdhury"
+let anothername = MyYoutubename
+
+anothername = "chaiaurcode"
+
+console.log(anothername);
+console.log(MyYoutubename);
+
+let userone = {
+
+    username: "eleus" ,
+
+    mail :"fuck@google.com"}
+
+ 
+let usertwo = userone
+
+usertwo.mail = "eleus@google.com"
+
+console.log(userone.mail);
+console.log(usertwo.mail);
+
 
 
 
