@@ -21,7 +21,6 @@ const regularuser = {
 
 const target = {a:2, b:3}
 const source = {b:4, c:5}
-
 const returnedtarget = Object.assign(target, source)
 //console.log(target);
 //console.log(source);
@@ -29,8 +28,26 @@ const returnedtarget = Object.assign(target, source)
 
 const obj1 = {1:"a", 2:"b"}
 const obj2 = {3:"a", 4:"b"}
-const obj3 = Object.assign(obj1, obj2)
-console.log(obj3);
+//const obj3 = Object.assign({}, obj1, obj2)
+
+//console.log(obj3);
+
+const obj3 = {...obj1, ...obj2}
+
+//console.log(obj3);
+
+
+console.log(Tinderuser);
+
+console.log(Object.keys(Tinderuser));
+console.log(Object.values(Tinderuser));
+console.log(Object.entries(Tinderuser));
+
+console.log(Tinderuser.hasOwnProperty('id'));
+console.log(Tinderuser.hasOwnProperty('islog'));
+
+
+
 
 
 
