@@ -37,14 +37,44 @@ const obj3 = {...obj1, ...obj2}
 //console.log(obj3);
 
 
-console.log(Tinderuser);
+//console.log(Tinderuser);
 
-console.log(Object.keys(Tinderuser));
-console.log(Object.values(Tinderuser));
-console.log(Object.entries(Tinderuser));
+//console.log(Object.keys(Tinderuser));
+//console.log(Object.values(Tinderuser));
+//console.log(Object.entries(Tinderuser));
 
-console.log(Tinderuser.hasOwnProperty('id'));
-console.log(Tinderuser.hasOwnProperty('islog'));
+//console.log(Tinderuser.hasOwnProperty('id'));
+//console.log(Tinderuser.hasOwnProperty('islog'));
+
+
+
+const cource = {
+    courcename: "Learning Js",
+    price: "999",
+    courceInstractor: "Eleus"
+}
+
+//console.log(cource.courceInstractor);
+
+cource.courceInstractor
+
+const {courceInstractor: Instractor} = cource
+
+//console.log(courceInstractor);
+console.log(Instractor);
+
+//{
+    "name": "Eleus",
+    "Cource": "js",
+    "Price": "free",
+}//  JSON
+
+[
+    {},
+    {},
+    {}
+]
+
 
 
 
