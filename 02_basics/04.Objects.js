@@ -64,10 +64,11 @@ const {courceInstractor: Instractor} = cource
 console.log(Instractor);
 
 //{
-    "name": "Eleus",
-    "Cource": "js",
-    "Price": "free",
-}//  JSON
+    //"name": "Eleus",
+    //"Cource": "js",
+    //"Price": "free",
+
+/}//  JSON
 
 [
     {},
