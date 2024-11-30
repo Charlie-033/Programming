@@ -28,10 +28,25 @@ const balance = 1000
 // if (balance>500) console.log('test');
 
 if (balance<500) {
-   console.log('less than 500');
+//    console.log('less than 500');
     } else if (balance<800) {
-       console.log('less than 750');
+    //    console.log('less than 750');
         } else if (balance<1200) {
-            console.log('less than 1200');
+            // console.log('less than 1200');
             }
+
+const userlog = true
+const Debitcard = true
+const loggedInGoogle = true
+const loggedInEmail = false
+
+if (userlog && Debitcard && 2==2) {
+    console.log('Allow to buy');
+    }
+
+if (loggedInGoogle||loggedInEmail) {
+   console.log(`${loggedInGoogle} or ${loggedInEmail}`);
+   console.log('User loggedIn');
+    
+}
 
