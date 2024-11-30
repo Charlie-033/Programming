@@ -31,8 +31,8 @@ for (let index = 0; index < MyArray.length; index++) {
 // Break and Continue
 for (let index = 1; index <=15; index++) {
     if (index==5) { console.log('detected 5');
-        break
-        continue
+       break
+       continue
     
     }
     console.log(`Value of i is ${index}`);
