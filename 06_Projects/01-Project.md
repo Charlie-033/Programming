@@ -190,4 +190,51 @@ function newGame() {
  
 }
 
+
+```
+## Project 6
+
+``` Javascript 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Color</title>
+</head>
+<body style="background-color: #414141; color:#fff;">
+    <h1>Start should change the background color every second!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+  const randomColor = function(){
+    const hex = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 8; i++) {
+      color += hex[Math.floor(Math.random()*16)];  
+    }
+    return color;
+  };
+  console.log(randomColor()); 
+  
+  let intervalId;
+  const startchangingColor = function(){
+    if(!intervalId){ intervalId = setInterval(changeBgColor,1000);
+
+    }
+    function changeBgColor(){
+        document.body.style.backgroundColor = randomColor()
+    }
+   }
+  const stopchangingColor = function(){
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+
+  document.querySelector('#start').addEventListener('click',startchangingColor)
+  document.querySelector('#stop').addEventListener('click',stopchangingColor)
+
+</script>
+</html>
 ```
